@@ -1,12 +1,9 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" /> -->
   <form>
     <input @change="getFile($event)" type="file" id='upload_file'/>
     <p>{{url}}</p>
     <img v-if='url' :src="url" />
   </form>
-  
 </template>
 
 <script>
